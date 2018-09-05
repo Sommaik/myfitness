@@ -1,0 +1,12 @@
+<p>
+  dashboard works!
+</p>
+<input type="text" name="todayText" id="" [(ngModel)]="todayText">
+
+<app-dashboard-item
+[title]="todayText"
+(itemClick)="onTodayItemClick($event)">
+</app-dashboard-item>
+
+<app-dashboard-item title="Yesterday"></app-dashboard-item>
+<app-dashboard-item title="Last Week"></app-dashboard-item>
